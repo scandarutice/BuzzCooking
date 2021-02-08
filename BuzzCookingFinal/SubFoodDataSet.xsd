@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SubFoodDataSet" targetNamespace="http://tempuri.org/SubFoodDataSet.xsd" xmlns:mstns="http://tempuri.org/SubFoodDataSet.xsd" xmlns="http://tempuri.org/SubFoodDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SubFoodDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SubFoodDataSet" msprop:Generator_UserDSName="SubFoodDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SubFoodDataTable" msprop:Generator_TableClassName="SubFoodDataTableDataTable" msprop:Generator_TableVarName="tableSubFoodDataTable" msprop:Generator_TablePropName="SubFoodDataTable" msprop:Generator_RowDeletingName="SubFoodDataTableRowDeleting" msprop:Generator_RowChangingName="SubFoodDataTableRowChanging" msprop:Generator_RowEvHandlerName="SubFoodDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SubFoodDataTableRowDeleted" msprop:Generator_UserTableName="SubFoodDataTable" msprop:Generator_RowChangedName="SubFoodDataTableRowChanged" msprop:Generator_RowEvArgName="SubFoodDataTableRowChangeEvent" msprop:Generator_RowClassName="SubFoodDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="食材名" msprop:Generator_ColumnVarNameInTable="column食材名" msprop:Generator_ColumnPropNameInRow="食材名" msprop:Generator_ColumnPropNameInTable="食材名Column" msprop:Generator_UserColumnName="食材名" type="xs:string" minOccurs="0" />
+              <xs:element name="攻撃力" msprop:Generator_ColumnVarNameInTable="column攻撃力" msprop:Generator_ColumnPropNameInRow="攻撃力" msprop:Generator_ColumnPropNameInTable="攻撃力Column" msprop:Generator_UserColumnName="攻撃力" type="xs:int" minOccurs="0" />
+              <xs:element name="回復力" msprop:Generator_ColumnVarNameInTable="column回復力" msprop:Generator_ColumnPropNameInRow="回復力" msprop:Generator_ColumnPropNameInTable="回復力Column" msprop:Generator_UserColumnName="回復力" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AB36814-8374-4037-A8D3-3A0C1DFEFF69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BuzzCookingFinal</RootNamespace>
+    <AssemblyName>BuzzCookingFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Battle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Battle.Designer.cs">
+      <DependentUpon>Battle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clear.Designer.cs">
+      <DependentUpon>Clear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cook.Designer.cs">
+      <DependentUpon>Cook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HowToForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HowToForm.Designer.cs">
+      <DependentUpon>HowToForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFoodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainFoodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubFoodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubFoodDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Battle.resx">
+      <DependentUpon>Battle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clear.resx">
+      <DependentUpon>Clear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cook.resx">
+      <DependentUpon>Cook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HowToForm.resx">
+      <DependentUpon>HowToForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MainFoodDataSet.xsc">
+      <DependentUpon>MainFoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MainFoodDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MainFoodDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MainFoodDataSet.xss">
+      <DependentUpon>MainFoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MenuDataSet.xsc">
+      <DependentUpon>MenuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MenuDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MenuDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MenuDataSet.xss">
+      <DependentUpon>MenuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SubFoodDataSet.xsc">
+      <DependentUpon>SubFoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SubFoodDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubFoodDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SubFoodDataSet.xss">
+      <DependentUpon>SubFoodDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battleimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ankake_supa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beefsteak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curryruce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frenchtoast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funamori.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyudon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaisendon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omurice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza_takuhai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramen_iekei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shortcake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takoyaki_fune.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tantanmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vegetable_yasai_stick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domecover_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\american.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\american_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\american_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\family.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\family_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\family_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kids_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisyokuman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisyokuman_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisyokuman_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisyokuwoman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisyokuwoman_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisyokuwoman_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enmadaiou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kansaman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kansaman_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kansaman_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kansawoman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kansawoman_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kansawoman_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shinwa_zeus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yakuza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yakuza_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yakuza_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\police_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badbg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
